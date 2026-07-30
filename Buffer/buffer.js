@@ -34,7 +34,7 @@ A Buffer in Node.js is a fixed-size chunk of raw bytes (each byte a number from 
 The key takeaway is that a byte's value (decimal, hex, binary) is always the same underlying number — decimal, hex, and binary are just different notations for writing it, not different types of data. buffer.toString(encoding) lets you convert the buffer into an actual string, in whatever encoding you choose ('utf8' for readable text, 'hex' for hex characters, 'base64', etc.) — this creates a brand-new string value, separate from the original buffer, which remains unchanged and still binary. So overall: Buffer = bytes in memory → bytes are just numbers → hex/decimal/binary are just different ways to write those numbers → .toString() converts those bytes into a human-readable string when needed.
 
 
-
+buffers are a general tool for handling any kind of binary data, whether it’s a file or data being transferred or processed.
 
 
 */
