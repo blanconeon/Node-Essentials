@@ -9,3 +9,6 @@ try {
 } catch (err) {
   console.log(`Something went wrong: ${err}`);
 }
+
+//Synchronous file functions block the entire program until the operation finishes. This is sometimes useful for quick scripts, setup tasks, or when you must guarantee that a file is read before anything else happens.
+
